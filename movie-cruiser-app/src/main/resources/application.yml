@@ -38,4 +38,10 @@
 #
 #logging:
 #  level:
-#    com.example.howtodoinjava: DEBUG
+#    org:
+#      springframework:
+#        web:  ERROR
+#    com.stackroute.moviecruiserapp:  WARN
+#  #logging.level.org.hibernate=ERROR
+#  file:  logs/spring-boot-logging.log
+#  log4j.logger.org.thymeleaf:  DEBUG

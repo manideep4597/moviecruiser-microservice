@@ -28,8 +28,8 @@ public class MovieController {
     public MovieController(MovieService movieService) {
         this.movieService = movieService;
     }
-    @Value("${movie-service.controller.exceptionmsg1}")
-    private String exceptionMessage;
+    //@Value("${movie-service.controller.exceptionmsg1}")
+    private String exceptionMessage="";
     @PostMapping(value="/movie")
     public ResponseEntity<?> saveMovie(@RequestBody @Valid Movie movie){
         ResponseEntity responseEntity;
